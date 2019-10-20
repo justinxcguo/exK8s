@@ -1,4 +1,4 @@
-docker bulid -t justinxcguo/multi-worker:latest -t justinxcguo/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+docker build -t justinxcguo/multi-worker:latest -t justinxcguo/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 docker build -t justinxcguo/multi-client:latest -t justinxcguo/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t justinxcguo/multi-server:latest -t justinxcguo/multi-server:$SHA -f ./server/Dockerfile ./server
 
